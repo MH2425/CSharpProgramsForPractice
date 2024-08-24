@@ -1,10 +1,16 @@
-﻿using System;
+﻿namespace CSharpProgramsForPractice;
 
-class Test
+internal class Program
 {
-    static void Main()
+    private static void Main()
     {
-        int x = 12 * 30;
-        Console.WriteLine(x);
+        Console.WriteLine(FeetToInches(30));
+        Console.WriteLine(FeetToInches(100));
+    }
+
+    private static int FeetToInches(int feet)
+    {
+        var inches = feet * 12;
+        return inches;
     }
 }
